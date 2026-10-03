@@ -1,37 +1,33 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧠 Bem-vindo ao meu Blog de IA & ML</h1>
-			<p>
-				Olá! Eu sou <strong>João Flauzino</strong>. Este espaço é dedicado a compartilhar artigos, análises,
-				experimentos práticos e notas técnicas sobre Inteligência Artificial, Machine Learning, Deep Learning e Engenharia de Dados.
-			</p>
-			<p>
-				O blog é construído com <a href="https://astro.build/">Astro</a> e hospedado no <a href="https://pages.github.com/">GitHub Pages</a>. 
-				Ele possui suporte nativo a:
-			</p>
-			<ul>
-				<li><strong>Fórmulas Matemáticas</strong>: Renderização rápida com KaTeX e LaTeX ($f(x)$, equações em bloco).</li>
-				<li><strong>Blocos de Código</strong>: Realce de sintaxe avançado para Python, PyTorch, SQL e mais.</li>
-				<li><strong>Markdown e MDX</strong>: Conteúdo limpo e componentes dinâmicos quando necessário.</li>
-				<li><strong>Performance Extrema</strong>: 100% HTML estático e leve.</li>
-			</ul>
-			<p>
-				👉 Confira os artigos publicados na seção <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/blog`}>Blog</a>!
-			</p>
-		</main>
-		<Footer />
-	</body>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1>Bem-vindo ao meu Blog de IA & ML</h1>
+            <p>
+                Olá! Eu sou <strong>João Flauzino</strong>. Resolvi criar esse
+                espaço para compartilhar meus conhecimentos e experiências em IA
+                e ML. A ideia é postar percepçoes sobre a área e de vez em
+                quando projetos práticos e experimentos.
+            </p>
+            <p>
+                👉 Confira os artigos publicados na seção{" "}
+                <a href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/blog`}>
+                    Blog
+                </a>
+                !
+            </p>
+        </main>
+        <Footer />
+    </body>
 </html>

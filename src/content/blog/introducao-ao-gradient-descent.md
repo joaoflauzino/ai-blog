@@ -2,7 +2,6 @@
 title: 'Entendendo o Gradient Descent e Otimização em Redes Neurais'
 description: 'Uma introdução matemática e prática ao algoritmo fundamental de treinamento de modelos de Machine Learning e Deep Learning.'
 pubDate: '2026-10-03'
-heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 O **Gradiente Descendente** (ou *Gradient Descent*) é a espinha dorsal da maior parte dos algoritmos modernos de Machine Learning e Deep Learning. Seja treinando uma simples regressão linear ou um Large Language Model (LLM) com bilhões de parâmetros, a essência do processo de otimização se baseia em encontrar o mínimo de uma função de perda (Loss Function).
